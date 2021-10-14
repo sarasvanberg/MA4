@@ -22,14 +22,14 @@ int Integer::get(){
 	}
 
 int Integer::fib(){
-	return fib(val);
+	return fib_(val);
     }
 
 int Integer::fib_(int n){
 	if (n <= 1){
 	return n;
 	}
-	else:{
+	else;{
 	return(fib_(n-1) + fib_(n-2));
 	}
 
