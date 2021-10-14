@@ -40,8 +40,9 @@ def main():
 		fib_cpp_time.append(time.time() - ts)
 
 
-	plt.plot(length, fib_py_time) # do your plotting here
-	plt.savefig("fibonacci_timing_py.png")
+	#plt.plot(length, fib_py_time) # do your plotting here
+	#plt.savefig("fibonacci_timing_py.png")
+
 	plt.plot(length2, fib_cpp_time) # do your plotting here
 	plt.savefig("fibonacci_timing_ccp.png")
  
