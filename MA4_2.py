@@ -28,7 +28,7 @@ def main():
 		
 	for ii in length:
 		ts = time.time()
-		f.fib(i)
+		f.fib(ii)
 		fib_cpp_time.append(time.time() - ts)
 
 
