@@ -16,7 +16,7 @@ def fib_py(n):
 
 
 def main():
-	length = [x for x in range(30, 40)]
+	length = [x for x in range(30, 35)]
 
 	fib_py_time = []
 	fib_cpp_time=[]
@@ -32,8 +32,9 @@ def main():
 	print(f.get())
 	print(f.fib())
 
-	
-	for y in length:
+	length2 = [x for x in range(30, 45)]
+
+	for y in length2:
 		ts = time.time()
 		f.fib()
 		fib_cpp_time.append(time.time() - ts)
@@ -41,7 +42,7 @@ def main():
 
 	plt.plot(length, fib_py_time) # do your plotting here
 	plt.savefig("fibonacci_timing_py.png")
-	plt.plot(length, fib_cpp_time) # do your plotting here
+	plt.plot(length2, fib_cpp_time) # do your plotting here
 	plt.savefig("fibonacci_timing_ccp.png")
  
 
