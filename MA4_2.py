@@ -32,7 +32,7 @@ def main():
 	print(f.get())
 	print(f.fib())
 
-	length2 = [x for x in range(30, 45)]
+	length2 = [x for x in range(30, 35)]
 
 	for y in length2:
 		ts = time.time()
