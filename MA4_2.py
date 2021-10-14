@@ -25,20 +25,25 @@ def main():
 		ts = time.time()
 		fib_py(i)
 		fib_py_time.append(time.time() - ts)
-		
+	
+	f = Integer(5)
+	print(f.get())
+	f.set(47)
+	print(f.get())
+	print(f.fib())
+
+	
 	for ii in length:
 		ts = time.time()
 		f.fib(ii)
 		fib_cpp_time.append(time.time() - ts)
 
 
-	
-
-	f = Integer(5)
-	print(f.get())
-	f.set(47)
-	print(f.get())
-	print(f.fib())
+#	f = Integer(5)
+#	print(f.get())
+#	f.set(47)
+#	print(f.get())
+#	print(f.fib())
 
 	plt.plot(length, fib_py_time) # do your plotting here
 	plt.savefig("fibonacci_timing_py.png")
