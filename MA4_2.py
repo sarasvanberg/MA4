@@ -16,7 +16,7 @@ def fib_py(n):
 
 
 def main():
-	length = [x for x in range(30, 45)]
+	length = [x for x in range(30, 40)]
 
 	fib_py_time = []
 	fib_cpp_time=[]
