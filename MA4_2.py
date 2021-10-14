@@ -5,17 +5,32 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
+def fib_py(n):
+    if n <= 1:
+        return n
+    else:
+        return(fib_py(n-1) + fib_py(n-2))
+        
+
 
 def main():
+	length = [x for x in range(35)]
+
+	fib_py_time = []
+
+	for i in length:
+		ts = time.time()
+		fib_py(i)
+		fib_py_time.append(time.time() - ts)
+
 	f = Integer(5)
 	print(f.get())
 	f.set(7)
 	print(f.get())
-	plt.plot([1,2,3],[1,2,3]) # do your plotting here
+	plt.plot(length,fib_py_time) # do your plotting here
 	plt.savefig("fibonacci_timing.png")
 
-#	for n in range(40, 46):
-#		append
+ 
 
 
 
@@ -27,4 +42,6 @@ def fib_py(n):
         return n
     else:
         return(fib_py(n-1) + fib_py(n-2)) 
+
+
 
