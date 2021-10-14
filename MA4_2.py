@@ -24,11 +24,14 @@ def main():
 		ts = time.time()
 		fib_py(i)
 		fib_py_time.append(time.time() - ts)
+	
 
 	f = Integer(5)
 	print(f.get())
-	f.set(7)
+	f.set(30)
 	print(f.get())
+	print(f.fib())
+
 	plt.plot(length, fib_py_time) # do your plotting here
 	plt.savefig("fibonacci_timing.png")
 
