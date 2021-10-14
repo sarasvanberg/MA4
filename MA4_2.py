@@ -28,14 +28,14 @@ def main():
 	
 	f = Integer(5)
 	print(f.get())
-	f.set(47)
+	f.set(30)
 	print(f.get())
 	print(f.fib())
 
 	
-	for ii in length:
+	for y in length:
 		ts = time.time()
-		f.fib(ii)
+		f.fib(y)
 		fib_cpp_time.append(time.time() - ts)
 
 
