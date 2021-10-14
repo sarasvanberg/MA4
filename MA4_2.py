@@ -28,7 +28,7 @@ def main():
 	
 	f = Integer(5)
 	print(f.get())
-	f.set(30)
+	f.set(47)
 	print(f.get())
 	print(f.fib())
 
@@ -38,12 +38,6 @@ def main():
 		f.fib()
 		fib_cpp_time.append(time.time() - ts)
 
-
-#	f = Integer(5)
-#	print(f.get())
-#	f.set(47)
-#	print(f.get())
-#	print(f.fib())
 
 	plt.plot(length, fib_py_time) # do your plotting here
 	plt.savefig("fibonacci_timing_py.png")
