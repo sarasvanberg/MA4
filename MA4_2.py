@@ -35,7 +35,7 @@ def main():
 	
 	for y in length:
 		ts = time.time()
-		f.fib(y)
+		f.fib()
 		fib_cpp_time.append(time.time() - ts)
 
 
