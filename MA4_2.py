@@ -5,6 +5,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
+import time
+
 def fib_py(n):
     if n <= 1:
         return n
