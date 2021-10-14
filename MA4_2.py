@@ -28,9 +28,9 @@ def main():
 	
 	f = Integer(5)
 	print(f.get())
-	f.set(47)
+	f.set(7)
 	print(f.get())
-	print(f.fib())
+	#print(f.fib())
 
 	length2 = [x for x in range(30, 35)]
 
