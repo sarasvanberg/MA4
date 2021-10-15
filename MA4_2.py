@@ -31,6 +31,7 @@ def main():
 	f.set(47)
 	print(f.get())
 	print(f.fib())
+	f.fib()
 
 	length2 = [x for x in range(30, 45)]
 
