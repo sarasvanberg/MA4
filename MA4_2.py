@@ -30,8 +30,8 @@ def main():
 	print(f.get())
 	f.set(47)
 	print(f.get())
-	#print(f.fib())
-	f.fib()
+	print(f.fib())
+	#f.fib()
 
 
 	for y in length:
@@ -40,12 +40,12 @@ def main():
 		fib_cpp_time.append(time.time() - ts)
 
 
-	plt.plot(length, fib_py_time, label='PY') # do your plotting here
-	plt.plot(length, fib_cpp_time, label='CPP') # do your plotting here
-	plt.legend()
+	plt.plot(length, fib_py_time) # do your plotting here
+	plt.plot(length2, fib_cpp_time) # do your plotting here
+	plt.legend("Py CPP")
 	plt.xlabel("Fibbonacci number")
 	plt.ylabel("Time")
-	plt.savefig("fibonacci_timing_NY.png")
+	plt.savefig("fibonacci_timing.png")
 	
  
 
