@@ -24,6 +24,7 @@ def pi_funk(n):
     real_pi=math.pi
 
     print ("Estimationen av pi med " + str(n) + " slumpvariabler blev: " + str(pi) + "\n" "Inbyggda konstantes värdet av pi är: " + str(real_pi) +  "\n" "Antalet punkter inne i cirkel: " + str(inC)  )
+    plt.legend("Py")
     plt.show()
     
 pi_funk(1000)
