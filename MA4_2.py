@@ -42,7 +42,8 @@ def main():
 
 
 	plt.plot(length, fib_py_time, label='py') # do your plotting here
-    plt.plot(length2, fib_cpp_time, label='cpp' # do your plotting here
+    plt.plot(length2, fib_cpp_time, label='cpp') # do your plotting here
+
 	plt.xlabel("Fibbonacci number")
     plt.ylabel("Time")
 	plt.savefig("fibonacci_timing.png")

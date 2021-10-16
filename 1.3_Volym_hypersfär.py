@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     start2 = pc()
     n_lst=[10000000 for x in range(1)]
-    d_lst=[11 for x in range(1)] #10 processers
+    d_lst=[11 for x in range(1)] #1 processers
     with future.ProcessPoolExecutor() as ex:
 
         results = list(ex.map(hyper_s, n_lst, d_lst))
