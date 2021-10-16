@@ -1,8 +1,8 @@
 """ 
 Student: Sara Svanberg
 Mail: Sara.Svanberg.1109@student.uu.se
-Reviewed by: 
-Date reviewed:
+Reviewed by: Kieran
+Date reviewed: 2021-10-15
 """
 import random
 import math
