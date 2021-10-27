@@ -24,6 +24,14 @@ def main():
 		fib_py(i)
 		fib_py_time.append(time.time() - ts)
 	
+
+	for i in length:
+		ts = time.time()
+		f=Integer(i)
+		f.fib()
+		fib_cpp_time.append(time.time() - ts)
+
+		
 	#f = Integer(5)
 	#print(f.get())
 	#f.set(47)
@@ -32,19 +40,12 @@ def main():
 	#f.fib()
 
 
-	for i in length:
-		ts = time.time()
-		f=Integer(i)
-		f.fib()
-		fib_cpp_time.append(time.time() - ts)
-
-
 	plt.plot(length, fib_py_time) # do your plotting here
 	plt.plot(length, fib_cpp_time) # do your plotting here
 	plt.legend("Py CPP")
 	plt.xlabel("Fibbonacci number")
 	plt.ylabel("Time")
-	plt.savefig("fibonacci_timing.png")
+	plt.savefig("fibonacci_timing_2.png")
 	plt.show()
  
 #f = Integer(47) blir ett stort negativt tal pga Int overflow, det blir den större
