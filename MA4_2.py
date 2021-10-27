@@ -34,7 +34,7 @@ def main():
 
 	for i in length:
 		ts = time.time()
-		f=Integral(i)
+		f=Integer(i)
 		f.fib()
 		fib_cpp_time.append(time.time() - ts)
 
